@@ -1,23 +1,8 @@
-# local secrets / machine-specific config
+# Local configuration
 .env
 
-# outputs
+# Data, checkpoints and outputs (never commit)
 runs/
-
-# python cache
-__pycache__/
-*/__pycache__/
-*.pyc
-
-# backups / editor
-*.bak_*
-*.bak
-*.swp
-
-# legacy (do NOT commit)
-scripts/legacy/
-
-# data (never commit)
 data/
 processed*/
 *.npy
@@ -27,11 +12,21 @@ processed*/
 *.ckpt
 *.tif
 *.tiff
-*.ome.tif
-*.ome.tiff
-
-# logs
+*.tar.gz
 *.log
 
-# local archives
-sbiad840_aligned_4p5.tar.gz
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+*.swp
+*.bak
+.DS_Store
+Thumbs.db

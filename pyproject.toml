@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embryo-tempoformer"
+dynamic = ["version"]
+description = "Clip-based developmental tempo inference from zebrafish brightfield time-lapse microscopy"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Li-Jia-Yu Deng" }, { name = "Pei-Ran Lin" }, { name = "Luo-Tong Xie" }]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.22",
+    "torch>=2.3",
+    "torchvision>=0.18",
+    "matplotlib>=3.5",
+    "pillow>=9.0",
+    "tifffile>=2022.5",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+etf = "etf.cli:main"
+
+[project.urls]
+Paper = "https://doi.org/10.1016/j.ailsci.2026.100170"
+Data = "https://doi.org/10.5281/zenodo.18318139"
+Source = "https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer"
+
+[tool.setuptools.dynamic]
+version = { attr = "etf.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B905", "UP007", "UP045"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

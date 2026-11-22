@@ -1,24 +1,19 @@
-# Ignore git files
 .git
-.gitignore
-
-# Ignore environment files
-environment.yml
+.github
 .env
-
-# Ignore python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Ignore potentially large data folders if they exist locally
+.venv
+runs/
 data/
-datasets/
-*.tiff
+docs/
+tests/
+**/__pycache__
+**/*.py[cod]
+**/*.egg-info
+.pytest_cache
+.ruff_cache
+*.npy
+*.pt
 *.tif
-*.nii.gz
-*.h5
-
-# OS generated files
-.DS_Store
-Thumbs.db
+*.tiff
+*.tar.gz
+*.log

@@ -1,28 +1,19 @@
-# Use the official PyTorch image to avoid complex CUDA and Python installations
-FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime
+# Runtime image with the PyTorch / CUDA / cuDNN versions used for the published results.
+FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime
 
-# Set the working directory to /app
-WORKDIR /app
-
-# Set environment variables to prevent Python from writing pyc files and to disable pip cache
 ENV PIP_NO_CACHE_DIR=1 \
     PYTHONUNBUFFERED=1
+WORKDIR /app
 
-# Install required system dependencies (e.g., libGL for OpenCV/image processing)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgl1 \
-    libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
+COPY pyproject.toml README.md LICENSE ./
+COPY src ./src
+# Pin torch/torchvision so that installing the package never replaces the base image's build.
+RUN pip install . "torch==2.5.1" "torchvision==0.20.1"
 
-# Copy only requirements to cache them in docker layer
-COPY requirements.txt .
+COPY scripts ./scripts
+COPY .env.example ./
 
-# Install Python dependencies
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
-
-# Copy the rest of the application code
-COPY . .
-
-# Default command to run when starting the container
-CMD ["/bin/bash"]
+# Mount the data bundle and an output directory, e.g.
+#   docker run --gpus all -v /path/to/embryo-tempoformer_release_v1:/release:ro -e RELEASE_DIR=/release \
+#     -v "$PWD/runs:/app/runs" embryo-tempoformer etf reproduce
+CMD ["bash"]

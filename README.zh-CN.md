@@ -1,6 +1,7 @@
 # EmbryoTempoFormer
 
 [![Paper](https://img.shields.io/badge/paper-AI%20in%20the%20Life%20Sciences%202026-1f6feb)](https://doi.org/10.1016/j.ailsci.2026.100170)
+[![Featured in NAR](https://img.shields.io/badge/featured%20in-Nucleic%20Acids%20Research%202026-c0392b)](https://doi.org/10.1093/nar/gkag1108)
 [![Data](https://img.shields.io/badge/data-10.5281%2Fzenodo.18318139-blue)](https://doi.org/10.5281/zenodo.18318139)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -16,6 +17,11 @@ EmbryoTempoFormer（ETF）用明场延时显微成像测量单个斑马鱼胚胎
 > Li-Jia-Yu Deng, Pei-Ran Lin, Luo-Tong Xie. **EmbryoTempoFormer: clip-based developmental tempo inference
 > from zebrafish brightfield time-lapse microscopy.** *Artificial Intelligence in the Life Sciences* 9, 100170 (2026).
 > [doi:10.1016/j.ailsci.2026.100170](https://doi.org/10.1016/j.ailsci.2026.100170)
+
+> [!NOTE]
+> **被 *Nucleic Acids Research*（2026）作为案例引用。** BioImage Archive 团队在其数据库论文中，把 EmbryoTempoFormer
+> 列为"基于存档数据开发新方法"的代表案例：它结合 S-BIAD531 和 S-BIAD840，提取出一种新的定量表型
+> （[doi:10.1093/nar/gkag1108](https://doi.org/10.1093/nar/gkag1108)）。
 
 <p align="center"><img src="docs/assets/fig1_overview.png" width="900" alt="EmbryoTempoFormer 方法总览"></p>
 <p align="center"><sub>论文 Fig. 1（CC BY 4.0）。(a) 片段中的每帧经 CNN 编码，帧 token 在时间上聚合后预测发育时间。(b) 训练时取同一胚胎的两个片段，

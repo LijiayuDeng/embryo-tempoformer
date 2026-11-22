@@ -1,6 +1,7 @@
 # EmbryoTempoFormer
 
 [![Paper](https://img.shields.io/badge/paper-AI%20in%20the%20Life%20Sciences%202026-1f6feb)](https://doi.org/10.1016/j.ailsci.2026.100170)
+[![Featured in NAR](https://img.shields.io/badge/featured%20in-Nucleic%20Acids%20Research%202026-c0392b)](https://doi.org/10.1093/nar/gkag1108)
 [![Data](https://img.shields.io/badge/data-10.5281%2Fzenodo.18318139-blue)](https://doi.org/10.5281/zenodo.18318139)
 [![Tests](https://github.com/LijiayuDeng/embryo-tempoformer/actions/workflows/tests.yml/badge.svg)](https://github.com/LijiayuDeng/embryo-tempoformer/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -19,6 +20,11 @@ This repository holds the code and the reproduction pipeline of
 > Li-Jia-Yu Deng, Pei-Ran Lin, Luo-Tong Xie. **EmbryoTempoFormer: clip-based developmental tempo inference
 > from zebrafish brightfield time-lapse microscopy.** *Artificial Intelligence in the Life Sciences* 9, 100170 (2026).
 > [doi:10.1016/j.ailsci.2026.100170](https://doi.org/10.1016/j.ailsci.2026.100170)
+
+> [!NOTE]
+> **Featured in *Nucleic Acids Research* (2026).** The BioImage Archive paper highlights EmbryoTempoFormer as an
+> example of developing new methods from archived data: it combines S-BIAD531 and S-BIAD840 "to extract a new
+> quantitative phenotype" ([doi:10.1093/nar/gkag1108](https://doi.org/10.1093/nar/gkag1108)).
 
 <p align="center"><img src="docs/assets/fig1_overview.png" width="900" alt="EmbryoTempoFormer overview"></p>
 <p align="center"><sub>Fig. 1 of the paper (CC BY 4.0). (a) Each frame of a clip is encoded by a CNN and the frame tokens are

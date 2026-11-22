@@ -2,9 +2,9 @@
 .env
 
 # Data, checkpoints and outputs (never commit)
-runs/
-data/
-processed*/
+/runs/
+/data/
+/processed*/
 *.npy
 *.npz
 *.pt

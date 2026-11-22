@@ -4,6 +4,7 @@ title: "EmbryoTempoFormer"
 abstract: "Clip-based developmental tempo inference from zebrafish brightfield time-lapse microscopy."
 type: software
 version: 2.0.0
+date-released: 2026-11-23
 license: MIT
 repository-code: "https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer"
 authors:

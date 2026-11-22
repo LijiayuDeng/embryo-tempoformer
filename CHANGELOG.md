@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.0 (unreleased)
+## 2.0.0 (2026-11-23)
 
 Restructured release. Numerical results are unchanged: with the same hardware and
 library versions, every per-embryo inference file, tempo table, confidence

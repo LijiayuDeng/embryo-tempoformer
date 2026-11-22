@@ -34,7 +34,7 @@ etf = "etf.cli:main"
 [project.urls]
 Paper = "https://doi.org/10.1016/j.ailsci.2026.100170"
 Data = "https://doi.org/10.5281/zenodo.18318139"
-Source = "https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer"
+Source = "https://github.com/LijiayuDeng/embryo-tempoformer"
 
 [tool.setuptools.dynamic]
 version = { attr = "etf.__version__" }

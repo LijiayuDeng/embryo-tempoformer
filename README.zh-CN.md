@@ -41,8 +41,8 @@ RMSE 汇总的是相关的滑动窗口，仅作描述；`m_anchor` 和 Δm 是�
 ## 安装
 
 ```bash
-git clone https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer.git
-cd s-biad531-embryo-tempoformer
+git clone https://github.com/LijiayuDeng/embryo-tempoformer.git
+cd embryo-tempoformer
 pip install -e .            # Python >= 3.9，安装后可使用 etf 命令
 ```
 

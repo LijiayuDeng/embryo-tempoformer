@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/paper-AI%20in%20the%20Life%20Sciences%202026-1f6feb)](https://doi.org/10.1016/j.ailsci.2026.100170)
 [![Data](https://img.shields.io/badge/data-10.5281%2Fzenodo.18318139-blue)](https://doi.org/10.5281/zenodo.18318139)
-[![Tests](https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer/actions/workflows/tests.yml/badge.svg)](https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer/actions/workflows/tests.yml)
+[![Tests](https://github.com/LijiayuDeng/embryo-tempoformer/actions/workflows/tests.yml/badge.svg)](https://github.com/LijiayuDeng/embryo-tempoformer/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **English** | [简体中文](README.zh-CN.md)
@@ -44,8 +44,8 @@ RMSE pools correlated sliding windows and is descriptive; `m_anchor` and Δm are
 ## Installation
 
 ```bash
-git clone https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer.git
-cd s-biad531-embryo-tempoformer
+git clone https://github.com/LijiayuDeng/embryo-tempoformer.git
+cd embryo-tempoformer
 pip install -e .            # Python >= 3.9; provides the `etf` command
 ```
 

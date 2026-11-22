@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use EmbryoTempoFormer, please cite the article below."
+title: "EmbryoTempoFormer"
+abstract: "Clip-based developmental tempo inference from zebrafish brightfield time-lapse microscopy."
+type: software
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/LijiayuDeng/s-biad531-embryo-tempoformer"
+authors:
+  - family-names: Deng
+    given-names: Li-Jia-Yu
+    affiliation: "Research School of Biology, Australian National University"
+  - family-names: Lin
+    given-names: Pei-Ran
+    affiliation: "School of Life Sciences, Westlake University"
+  - family-names: Xie
+    given-names: Luo-Tong
+    affiliation: "SDU-ANU Joint Science College, Shandong University"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18318139
+    description: "Reproducibility bundle: processed arrays, splits and released checkpoints"
+preferred-citation:
+  type: article
+  title: "EmbryoTempoFormer: clip-based developmental tempo inference from zebrafish brightfield time-lapse microscopy"
+  authors:
+    - family-names: Deng
+      given-names: Li-Jia-Yu
+    - family-names: Lin
+      given-names: Pei-Ran
+    - family-names: Xie
+      given-names: Luo-Tong
+  journal: "Artificial Intelligence in the Life Sciences"
+  volume: 9
+  start: 100170
+  year: 2026
+  doi: 10.1016/j.ailsci.2026.100170
